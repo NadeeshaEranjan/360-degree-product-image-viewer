@@ -1,0 +1,68 @@
+html,body{
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	background: #111111;
+	color: #fff;
+}
+
+.sliders-contaier{
+	display: flex;
+	width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+[class*="slider-contaier"]{
+	flex: 1;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+[class*="slider-contaier"] .slider-inner-contaier{
+	position: relative;
+}
+
+[class*="slider-contaier"] .slider-inner-contaier img{
+	max-width: 30vw;
+}
+
+[class*="slider-contaier"] .slider-bar-container{
+	display: flex;
+}
+
+[class*="slider-contaier"] .slider-bar-container #btnPlayPause{
+	position: relative;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+[class*="slider-contaier"] .slider-bar-container #btnPlayPause .fa{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+[class*="slider-contaier"] .slider-bar-container #btnPlayPause .fa-play{
+	transform: translate(-38%, -54%);
+}
+
+[class*="slider-contaier"] .slider-bar-container #btnPlayPause .fa-pause{
+    transform: translate(-50%, -57%);
+	display: none;
+}
+
+[class*="slider-contaier"] .slider-bar-container #imageController{
+	margin-left: 20px;
+}
